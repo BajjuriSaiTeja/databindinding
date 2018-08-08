@@ -4,8 +4,9 @@ import { Component1Component } from './component1/component1.component';
 
 @NgModule({
   imports: [
-    CommonModule,Component1Component
+    CommonModule
   ],
-  declarations: [Component1Component]
+  declarations: [Component1Component],
+  exports:[Component1Component]
 })
 export class Task1Module { }
