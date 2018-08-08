@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from "@angular/core";
 
 @Component({
-  selector: 'app-outputcomponent',
-  templateUrl: './outputcomponent.component.html',
-  styleUrls: ['./outputcomponent.component.css']
+  selector: "app-outputcomponent",
+  template: " Say {{childMessage}}",
+  styleUrls: ["./outputcomponent.component.css"]
 })
 export class OutputcomponentComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  constructor() {}
+  @Input() childMessage:string;
+  ngOnInit() {}
 }

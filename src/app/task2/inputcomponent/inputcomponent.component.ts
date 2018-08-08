@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-inputcomponent',
-  templateUrl: './inputcomponent.component.html',
+  template: '<app-outputcomponent [childMessage]="parentMessage"></app-outputcomponent>',
   styleUrls: ['./inputcomponent.component.css']
 })
 export class InputcomponentComponent implements OnInit {
 
   constructor() { }
-
+  parentMessage = "message from parent";
   ngOnInit() {
   }
 
