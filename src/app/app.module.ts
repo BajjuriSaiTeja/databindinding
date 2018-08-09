@@ -3,10 +3,11 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { Task1Module } from "./task1/task1.module";
 import { Task2Module } from "./task2/task2.module";
+import { Task3Module } from "./task3/task3.module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, Task1Module, Task2Module],
+  imports: [BrowserModule, Task1Module, Task2Module,Task3Module],
   providers: [],
   bootstrap: [AppComponent]
 })
