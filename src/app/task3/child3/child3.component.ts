@@ -8,7 +8,7 @@ import { Component} from '@angular/core';
 })
 export class Child3Component {
 
-  message = 'Hola Mundo!';
+  message = 'I am message sent from child to parent!';
 
   constructor() { }
 
